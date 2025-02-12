@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dragon Design AI Platform</title>
+    <title>FlyAI Design</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -127,8 +127,8 @@
     </div>
 
     <div id="intro" class="card active">
-        <h2>Dragon design AI platform.</h2>
-        <p>welcome to Dragon Design AI Platform.</p>
+        <h2>FlyAI Design.</h2>
+        <p>FlyAI Design.</p>
         <button class="btn" onclick="nextCard('intro', 'countryCard')">Next</button>
     </div>
 
@@ -138,16 +138,13 @@
             <label>Select your Country:</label>
             <div class="options">
                 <label class="option">
-                    <input type="checkbox" name="country" value="India"> India
+                    <input type="radio" name="country" value="USA"> USA
                 </label>
                 <label class="option">
-                    <input type="checkbox" name="country" value="USA"> USA
+                    <input type="radio" name="country" value="Canada"> Canada
                 </label>
                 <label class="option">
-                    <input type="checkbox" name="country" value="Canada"> Canada
-                </label>
-                <label class="option">
-                    <input type="checkbox" name="country" value="other"> Other
+                    <input type="radio" name="country" value="India"> India
                 </label>
             </div>
             <div id="otherCountryInput" class="other-input" style="display: none;">
@@ -161,10 +158,10 @@
     <div id="weightCard" class="card">
         <h2>Payload Weight</h2>
         <div class="select-container">
-            <label for="weight">Choose Payload Weight:</label>
+            <label for="weight">Choose the Range of Payload weight:</label>
             <div class="options">
                 <label class="option">
-                    <input type="radio" name="weight" value="0-1kg"> 0 to 1 Kg
+                    <input type="radio" name="weight" value="Upto 1 Kg"> Upto 1 Kg
                 </label>
                 <label class="option">
                     <input type="radio" name="weight" value="1-5kg"> 1 to 5 Kg
@@ -203,12 +200,6 @@
                     <input type="radio" name="type" value="Camera"> Camera
                 </label>
                 <label class="option">
-                    <input type="radio" name="type" value="Winch"> Winch
-                </label>
-                <label class="option">
-                    <input type="radio" name="type" value="Liquid Tank"> Liquid Tank
-                </label>
-                <label class="option">
                     <input type="radio" name="type" value="Logistics Box"> Logistics Box
                 </label>
                 <label class="option">
@@ -230,16 +221,16 @@
             <label for="profile">Choose Mission Profile:</label>
             <div class="options">
                 <label class="option">
-                    <input type="radio" name="profile" value="Entertainment"> Entertainment
+                    <input type="radio" name="profile" value="Photogrammetry"> Photogrammetry
+                </label>
+                <label class="option">
+                    <input type="radio" name="profile" value="Inspection"> Inspection
                 </label>
                 <label class="option">
                     <input type="radio" name="profile" value="Surveillance"> Surveillance
                 </label>
                 <label class="option">
                     <input type="radio" name="profile" value="Logistics"> Logistics
-                </label>
-                <label class="option">
-                    <input type="radio" name="profile" value="Rescue"> Rescue
                 </label>
                 <label class="option">
                     <input type="radio" name="profile" value="other"> Other
@@ -259,13 +250,10 @@
             <label>Choose Operational Envelope:</label>
             <div class="options">
                 <label>
-                    <input type="radio" name="envelope" value="Range"> Range
+                    <input type="radio" name="envelope" value="BVLOS"> BVLOS
                 </label>
                 <label>
-                    <input type="radio" name="envelope" value="Line of sight"> Line of sight
-                </label>
-                <label>
-                    <input type="radio" name="envelope" value="other"> Other
+                    <input type="radio" name="envelope" value="LOS"> LOS
                 </label>
             </div>
             <div id="otherEnvelopeInput" class="other-input" style="display: none;">
@@ -290,9 +278,6 @@
                 <label>
                     <input type="radio" name="autonomy" value="Semi-Autonomous"> Semi-Autonomous
                 </label>
-                <label>
-                    <input type="radio" name="autonomy" value="other"> Other
-                </label>
             </div>
             <div id="otherAutonomyInput" class="other-input" style="display: none;">
                 <input type="text" name="otherAutonomy" placeholder="Enter other operational autonomy">
@@ -307,14 +292,14 @@
         <div class="select-container">
             <label>Choose Safety Features:</label>
             <div class="options">
-                <label>
-                    <input type="radio" name="safety" value="Parachute"> Parachute
+               <label>
+                    <input type="checkbox" name="safety" value="Parachute (only for 10 Kg+ payload)"> Parachute (only for 10 Kg+ payload)
                 </label>
                 <label>
-                    <input type="radio" name="safety" value="Obstacle Avoidance"> Obstacle Avoidance
+                    <input type="checkbox" name="safety" value="Obstacle Avoidance"> Obstacle Avoidance
                 </label>
                 <label>
-                    <input type="radio" name="safety" value="other"> Other
+                    <input type="checkbox" name="safety" value="other">  Propeller Guard
                 </label>
             </div>
             <div id="otherSafetyInput" class="other-input" style="display: none;">
